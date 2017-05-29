@@ -1,0 +1,132 @@
+#content{
+	height: 100%;
+}
+#sky{
+	height: 50%;
+	position: relative;
+}
+.sun{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top:100px;
+	left: -50px;
+	animation: circle 10s linear 2s; 
+
+}
+@keyframes circle{
+	30%{transform: translate(250px,-150px);}
+	50%{transform: translate(250px,-150px);}
+	100%{transform: translate(1200px,-100px);}
+
+}
+
+.sun-center{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #FFA500;
+}
+.sun-around{
+	position: absolute;
+	top:185px;
+	left:0px;
+	width: 200px;
+	height: 30px;
+	animation: rot 2s linear 1s infinite;
+	transform-origin: 100% 50%;
+}
+.dec {
+	position: absolute;
+	left: 0px;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	background-color: transparent;
+	transform-origin: 100% 50%;
+}
+.dec:nth-of-type(1){
+	animation: play1 1s linear forwards;
+}
+.dec:nth-of-type(2){
+	animation: play2 1s linear forwards;
+}
+.dec:nth-of-type(3){
+	animation: play3 1s linear forwards;
+}
+.dec:nth-of-type(4){
+	animation: play4 1s linear forwards;
+}
+.dec:nth-of-type(5){
+	animation: play5 1s linear forwards;
+}
+.dec:nth-of-type(6){
+	animation: play6 1s linear forwards;
+}
+.dec:nth-of-type(7){
+	animation: play7 1s linear forwards;
+}
+.dec:nth-of-type(8){
+	animation: play8 1s linear forwards;
+}
+@keyframes play1{
+		100%{transform: rotate(15deg);}
+}
+@keyframes play2{
+	100%{transform: rotate(60deg);}
+}
+@keyframes play3{
+	100%{transform: rotate(105deg);}
+}
+@keyframes play4{
+	100%{transform: rotate(150deg);}
+}
+@keyframes play5{
+	100%{transform: rotate(195deg);}
+}
+@keyframes play6{
+	100%{transform: rotate(240deg);}
+}
+@keyframes play7{
+	100%{transform: rotate(295deg);}
+}
+@keyframes play8{
+	100%{transform: rotate(340deg);}
+}
+@keyframes rot{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.dec1{
+	width: 168px;
+	padding-left:32px; 
+}
+.spot{
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color: #FFA500;
+	margin-left: 20px;
+}
+.spot-la{
+	width: 20px;
+	height: 20px;
+}
+.spot-sm{
+	width: 12px;
+	height: 12px;
+}
+.spot-xs{
+	width: 7px;
+	height: 7px;
+}
+.dec1 .spot{
+	margin-left: 25px
+}
